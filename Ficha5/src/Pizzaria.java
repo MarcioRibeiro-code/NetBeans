@@ -54,7 +54,7 @@ public class Pizzaria {
         ems.addEmenta("Ementa Pizza 1", "Pizza vegetarianas", Inicio);
 
         System.out.println(Ementas.getContador());
-        ems.setEmenta_Ativa("EM1");
+        ems.setEmenta_Ativa("EM0");
         System.out.println(ems.toString());
         
         System.out.println(ems.toString());
