@@ -20,7 +20,7 @@ public class Unidade_Curricular {
 
     public Unidade_Curricular(String Nome, String Nome_Curso, int Ano_letivo, int Semestre) {
         this.Nome = Nome;
-        this.Sigla = this.Nome.substring(0, 3).toCharArray();
+        this.Sigla = this.Nome.substring(0, 3).toUpperCase().toCharArray();
         this.Nome_Curso = Nome_Curso;
         this.Ano_letivo = Number_inRange(Ano_letivo);
         this.Semestre = Number_inRange(Semestre);
@@ -28,8 +28,8 @@ public class Unidade_Curricular {
 
     protected static char Number_inRange(int num) {
 
-        if (num >= 1 && num <= 2) {
-            return (char) num;
+        if (num>=1 && num<= 2) {
+            return (char) (num +'0');
         }
 
         return '\0';
@@ -37,29 +37,16 @@ public class Unidade_Curricular {
 
     @Override
     public String toString() {
-        return "---Unidade_Curricular---" + "\n Nome=" + Nome + "\n Sigla=" + Arrays.toString(Sigla) + "\n Nome_Curso=" + Nome_Curso + "\n Ano_letivo=" + Ano_letivo + "\n Semestre=" + Semestre;
+        return "\n---Unidade_Curricular---" + "\n Nome=" + Nome + "\n Sigla=" + Arrays.toString(Sigla) + "\n Nome_Curso=" + Nome_Curso + "\n Ano_letivo=" + Ano_letivo + "\n Semestre=" + Semestre;
     }
 
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Unidade_Curricular other = (Unidade_Curricular) obj;
-        return Arrays.equals(this.Sigla, other.Sigla);
+    public char[] getSigla() {
+        return Sigla;
     }
 
     public String getNome() {
         return Nome;
     }
-
 
     public String getNome_Curso() {
         return Nome_Curso;
@@ -73,6 +60,4 @@ public class Unidade_Curricular {
         return Semestre;
     }
 
-    
-    
 }

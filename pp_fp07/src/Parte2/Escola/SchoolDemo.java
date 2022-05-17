@@ -73,6 +73,7 @@ public class SchoolDemo {
         char[] temp_ID_PE = ID_Pessoa.toCharArray();
         //char[] temp_Sigla_UC = Sigla_UC.toCharArray();
 
+        //System.out.println("\nEXISTE CADEIRA 1: " + search_UC_vSigla(Sigla_UC));
         if (search_UC_vSigla(Sigla_UC) == null && ID_Pessoa.substring(0, 2).equals("FA")) {
             return -1;
         }
@@ -81,15 +82,16 @@ public class SchoolDemo {
         for (int i = 0; i < SchoolDemo.contador_Pessoa; i++) {
             if (temp_pessoas[i] instanceof Professor) {
                 Professor temp_professor = (Professor) temp_pessoas[i];
-               // System.out.println(temp_professor.toString());
+                // System.out.println(temp_professor.toString());
                 if (Arrays.equals(temp_professor.getSigla(), temp_ID_PE)) {
+
                     temp_professor.addUnidade_curricular(search_UC_vSigla(Sigla_UC));
                     return 1;
                 }
 
             } else {
                 Aluno temp_aluno = (Aluno) temp_pessoas[i];
-               // System.out.println(temp_aluno.toString());
+                // System.out.println(temp_aluno.toString());
                 if (Arrays.equals(temp_aluno.getCodigo_Identificador(), temp_ID_PE)) {
                     temp_aluno.addUnidade_curricular(search_UC_vSigla(Sigla_UC));
                     return 1;
@@ -104,13 +106,18 @@ public class SchoolDemo {
     private Unidade_Curricular search_UC_vSigla(String Sigla_UC) {
         var temp_UCs = this.getUnidade_curricular();
         for (int i = 0; i < SchoolDemo.contador_UC; i++) {
-            if (temp_UCs[i].equals(Sigla_UC.toCharArray())) {
-                System.out.println(temp_UCs[i].getNome());
+            if (Arrays.equals(temp_UCs[i].getSigla(), Sigla_UC.toCharArray())) {
+                //System.out.println(temp_UCs[i].getNome());
                 return temp_UCs[i];
             }
         }
         return null;
     }
 //____________END SEARCH STUFF____________________________________-
+
+    @Override
+    public String toString() {
+        return "--SchoolDemo--" + "\nPessoa=" + Arrays.toString(pessoa) + "\nUnidade_curricular=" + Arrays.toString(unidade_curricular);
+    }
 
 }
