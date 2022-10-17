@@ -5,7 +5,7 @@ package ficha;
 
 public class App {
     public String getGreeting() {
-        return "Hello";
+        return "Hello WOrld";
     }
 
     public static void main(String[] args) {
