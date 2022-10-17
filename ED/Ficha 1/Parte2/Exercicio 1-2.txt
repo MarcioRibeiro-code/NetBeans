@@ -1,0 +1,63 @@
+Exercicio 1
+
+a) A declaração Store<T> é uma classe generica com o tipo T o que especifica que podem adicionar qualquer tipo de dados.
+b) Store é uma classe paremetrizada (generic).
+c) Store<String> é uma classe generica semelhante á alinea a), mas so podemos introduzir dados do tipo String.
+d) O uso de um tipo paremetrizado é conhecido como generico.
+
+
+Exercicio 2 
+
+Considere os seguintes fragmentos de codigo JAva (as primeiras 3 linhas 
+sao iguais em todos; apenas a ultima linha apresenta diferenças). 
+Para cada um dos fragmentos, o código compila corretamente? 
+Caso compile, é executado sem erros, ou existe alguma exceção?
+
+
+-----------------
+
+Point[] a = new Point[10];
+Object[] b;
+b=a;
+b[0]=new Point(10,20);
+----
+
+Point[] a = new Point[10];
+Object[] b;
+b=a;
+b[0]="Magical Mystery Tour";
+----
+Point[] a = new Point[10];
+Object[] b;
+b=a;
+a[0]="Magical Mystery Tour"
+
+
+----
+B=a ; 
+Object obtem a referencia de memoria de 
+A(Array de point), o que a tranforma num Point;
+
+AS 2 debaixo vao dar erro, mas a ultima concerteza
+nao corre.
+
+
+Segundo fragmento
+b apesar de obter o endereço de memoria de a(Point), 
+ainda continua a ser Object. O que o permite armazenar uma String.
+Ja ao imprimir verifica-se que o conteudo em b[0] nao é um Point e devolve-nos um erro.
+
+Ultimo fragmento
+A string nao pode ser convertida para Point.
+
+
+
+EX3
+
+Com o uso de ArrayList, não é possivel converter b para Point, 
+dando uma mensagem de erro.
+
+HERANÇA COM CLASSE GENERICAS
+
+Dadas duas classes: A(Point) e B(Object), e uma classe generica: G(Arraylist) não existe nenhum relacionamento entre G<A> e G<B>.
+É sempre verdade independente do relacionamento entre as class a e b, por exemplo, se a classe A é uma subclasse da Classe B.
