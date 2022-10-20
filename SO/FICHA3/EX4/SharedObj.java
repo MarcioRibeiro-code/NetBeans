@@ -1,28 +1,12 @@
 package EX4;
 
 public class SharedObj {
+	private int number;
+	private String name;
 
-    private volatile int number ;
-    private volatile String name;
+	public String getName() {return name;}
+	public int getNumber() {return number;}
 
-    public  synchronized String getName() {
-        return name;
-    }
-
-    public synchronized int getNumber() {
-        return number;
-    }
-
-    public synchronized void setName(String s) {
-        name = s;
-    }
-
-    public synchronized void setNumber(int x) {
-
-        number = x;
-    }
-
-    public SharedObj() {
-        this.number = 0;
-    }
+	public void setName(String n) {name=n;}
+	public void setNumber(int x) {number=x;}
 }
