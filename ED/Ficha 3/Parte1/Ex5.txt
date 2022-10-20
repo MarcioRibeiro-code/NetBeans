@@ -1,0 +1,4 @@
+java.uti.Stack dá extends a java.util.vector que é baseado em arrays.
+Possui 5 operações que permitem um vector ser "tratado"/"ter funcionalidades semelhantes" a um stack.
+
+Nos exemplos implementados por mim, contem sempre um nó titulado de "head". Inves do util.stack que nao possui nenhum elemento na sua criação.
