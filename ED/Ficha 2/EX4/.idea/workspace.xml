@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aeaa3cc-d9a3-48ce-ad57-a73b60cc35cf" name="Changes" comment="" />
+    <list default="true" id="4aeaa3cc-d9a3-48ce-ad57-a73b60cc35cf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Ficha 3/app/bin/main/ficha/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficha 3/app/bin/test/ficha/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficha 3/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficha 3/app/src/main/java/ficha/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficha 3/app/src/test/java/ficha/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficha 3/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficha 3/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/PC/OneDrive - Instituto Politécnico do Porto/Documentos/GitHub/Repositorio/NetBeansProject/ED/Ficha 3/Parte1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,6 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665760598070</updated>
       <workItem from="1665760599294" duration="19020000" />
+      <workItem from="1666085516422" duration="52000" />
     </task>
     <servers />
   </component>
