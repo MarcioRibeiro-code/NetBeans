@@ -13,16 +13,20 @@ public class Ex2 implements Runnable {
             System.exit(0);
         }
 
+        int priority = Integer.parseInt(args[0]);
         for (int i = 0; i < Integer.parseInt(args[0]); i++) {
             Runnable r = new Ex2(i);
-            new Thread(r).start();
+            Thread n = new Thread(r);
+            n.setName("[TH" + i + "]");
+            n.setPriority(priority--);
+            n.start();
         }
 
     }
 
     @Override
     public void run() {
-        System.out.println("[TH" +this.i+ "]" + "Eu sou uma thread!");
+        System.out.println(Thread.currentThread().getName() + "Eu sou uma thread!");
 
     }
 
