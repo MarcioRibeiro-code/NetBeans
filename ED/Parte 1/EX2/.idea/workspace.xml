@@ -5,94 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62498a02-6dfe-43b6-b189-70771df5115f" name="Changes" comment="ficha 3 - ED EX2_4">
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/7.4/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/7.4/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/7.4/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/7.4/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.idea/checkstyleidea-libs/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.idea/modules/EX1.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/build/classes/java/main/lib/ArrayStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/build/classes/java/main/lib/Exception/EmptyCollectionException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/build/classes/java/main/lib/Interfaces/StackADT.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/build/classes/java/main/lib/Numbers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/build/classes/java/main/org/example/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/out/production/classes/lib/ArrayStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/out/production/classes/lib/Exception/EmptyCollectionException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/out/production/classes/lib/Interfaces/StackADT.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/out/production/classes/lib/Numbers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/out/production/classes/org/example/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/src/main/java/lib/ArrayStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/src/main/java/lib/Exception/EmptyCollectionException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/src/main/java/lib/Interfaces/StackADT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/src/main/java/lib/Numbers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EX1/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/EX2.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lib/Interfaces/LinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lib/LinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/lib/Interfaces/LinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/lib/LinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/example/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/Interfaces/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SO/FICHA3/EX4/BinarySemaphore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SO/FICHA3/EX4/Run.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SO/FICHA3/EX4/Run2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SO/FICHA3/EX4/SharedObj.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SO/FICHA3/EX4/doThreadSharing.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,21 +41,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/PC/OneDrive - Instituto Politécnico do Porto/Documentos/GitHub/Repositorio/NetBeansProject/ED/Parte 1/EX2/src/main/java/lib&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Gradle/gradle-7.5.1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "C:/Users/PC/OneDrive - Instituto Politécnico do Porto/Documentos/GitHub/Repositorio/NetBeansProject/ED/Parte 1/EX2/src/main/java/lib",
+    "last_opened_file_path": "C:/Users/PC/OneDrive - Instituto Politécnico do Porto/Documentos/GitHub/Repositorio/NetBeansProject/SO/FICHA3/EX4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="lib" />
@@ -198,6 +115,7 @@
       <workItem from="1666128325123" duration="2474000" />
       <workItem from="1666182749054" duration="1678000" />
       <workItem from="1666256999972" duration="502000" />
+      <workItem from="1666261440610" duration="56000" />
     </task>
     <task id="LOCAL-00001" summary="ficha 3 - ED EX2_4">
       <created>1666257080910</created>
