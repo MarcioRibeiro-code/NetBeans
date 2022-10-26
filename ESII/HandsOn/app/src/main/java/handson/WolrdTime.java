@@ -1,38 +1,35 @@
 package handson;
 
-import java.security.Timestamp;
-import java.text.SimpleDateFormat;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.TimeZone;
-
 import org.joda.time.*;
 import org.joda.time.format.DateTimeFormat;
 
 public class WolrdTime {
-    public String getTimeByCountry(String local) {
-       // Calendar calendar = Calendar.getInstance();
-       // calendar.setTime(new Date());
+  public String getTimeByCountry(String local) {
 
-       
-        DateTimeZone zone = DateTimeZone.forID(local);
+    // Gets a time zone instance for the specified time zone id.
+    DateTimeZone zone = DateTimeZone.forID(local);
 
-       // SimpleDateFormat sdf = new SimpleDateFormat("hh:mm");
+    /**
+     * Factory to create a formatter from a pattern String. The pattern string is
+     * described above in the class level javadoc.It is very similar to
+     * SimpleDateFormat patterns.
+     * 
+     */
+    org.joda.time.format.DateTimeFormatter fmt = DateTimeFormat.forPattern("HH:mm");
 
-       // sdf.setTimeZone(TimeZone.getTimeZone(zone.toString()));
+    /**
+     * Constructs an instance set to the current system milisecond time in the
+     * specified time zone.
+     */
+    DateTime dt = new DateTime(zone);
 
-       org.joda.time.format.DateTimeFormatter fmt = DateTimeFormat.forPattern("HH:mm");
-       DateTime dt = new DateTime(zone);
-       
-       return dt.toString("HH:mm");
-        // .format ("HH:mm")
-    }
+    return fmt.print(dt);
+    // .format ("HH:mm")
+  }
 
-    public static void main(String[] args) {
-      WolrdTime wt = new WolrdTime();
-        System.out.println(wt.getTimeByCountry("America/Adak"));
-    }
+  public static void main(String[] args) {
+    WolrdTime wt = new WolrdTime();
+    System.out.println(wt.getTimeByCountry("America/Adak"));
+  }
 
 }

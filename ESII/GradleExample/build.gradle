@@ -1,0 +1,25 @@
+plugins{
+    id 'java'
+    id 'application'
+}
+
+jar{
+    manifest{
+        attributes 'Specification-Title': 'Hello World - Eng.Software'
+        attributes 'Specification-Version': '1.0'
+        attributes 'Specification-Vendor':'ESTG'
+        attributes 'Implementation-Title':'gradleExample.HelloWorld'
+        attributes 'Implementation-Version':'build01'
+        attributes 'Implementation-Vendor':'ESTG'
+        attributes 'Main-Class':'gradleExample.HelloWorld'
+    }
+}
+
+mainClassName = 'gradleExample.HelloWorld'
+
+task zip(type:Zip,group:'Archive',description: "Archives sources in a zip file"){
+    destinationDirectory = file(".")
+    archiveFileName = "backup.zip"
+    from "src"
+}
+build.finalizedBy zip,javadoc

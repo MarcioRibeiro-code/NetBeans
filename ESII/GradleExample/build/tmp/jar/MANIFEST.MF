@@ -1,3 +1,9 @@
 Manifest-Version: 1.0
-Main-class: gradleExample.HelloWorld
+Specification-Title: Hello World - Eng.Software
+Specification-Version: 1.0
+Specification-Vendor: ESTG
+Implementation-Title: gradleExample.HelloWorld
+Implementation-Version: build01
+Implementation-Vendor: ESTG
+Main-Class: gradleExample.HelloWorld
 
