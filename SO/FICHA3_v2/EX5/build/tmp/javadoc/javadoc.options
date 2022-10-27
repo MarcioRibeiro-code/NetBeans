@@ -1,0 +1,10 @@
+-classpath '/workspace/NetBeans/SO/FICHA3_v2/EX5/build/classes/java/main:/workspace/NetBeans/SO/FICHA3_v2/EX5/build/resources/main'
+-d '/workspace/NetBeans/SO/FICHA3_v2/EX5/build/docs/javadoc'
+-doctitle 'EX5 API'
+-notimestamp 
+-quiet 
+-windowtitle 'EX5 API'
+'/workspace/NetBeans/SO/FICHA3_v2/EX5/src/main/java/lib/Run.java'
+'/workspace/NetBeans/SO/FICHA3_v2/EX5/src/main/java/lib/Run2.java'
+'/workspace/NetBeans/SO/FICHA3_v2/EX5/src/main/java/lib/SharedObj.java'
+'/workspace/NetBeans/SO/FICHA3_v2/EX5/src/main/java/lib/doThreadSharing.java'

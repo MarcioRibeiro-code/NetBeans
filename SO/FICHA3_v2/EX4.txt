@@ -1,0 +1,5 @@
+Imprime todos os valores a 9, uma vezes que as threads partilham a variavel ShareadObj e executam ao mesmo tempo.
+Uma forma de prevenir isso é com a utilização do join(), que possui o comportamento semelhante ao WaitFOr() dos processos.
+
+Ou seja, um thread executa e termina por vez (sequencialmente).
+Uma outra mudança no codigo é que a printerText tem um tempo inferior ao numberTHread cerca de 100ms, e desta forma imprimo o valor de 0 a 10.
