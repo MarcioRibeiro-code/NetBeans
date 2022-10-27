@@ -1,3 +1,8 @@
 Manifest-Version: 1.0
+Specificantion-Title: Hands on - Eng. software II
+Specification-Version: 1.0
+Specification-Vendor: ESTG
+Implementation-Title: handson.WolrdTIme
+Implementation-Vendor: ESTG
 Main-Class: handson.WolrdTime
 

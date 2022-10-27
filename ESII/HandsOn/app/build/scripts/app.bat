@@ -71,7 +71,7 @@ set CLASSPATH=%APP_HOME%\lib\app.jar;%APP_HOME%\lib\joda-time-2.11.2.jar;%APP_HO
 
 
 @rem Execute app
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %APP_OPTS%  -classpath "%CLASSPATH%" handson.App %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %APP_OPTS%  -classpath "%CLASSPATH%" handsOn.WolrdTime %*
 
 :end
 @rem End local scope for the variables with windows NT shell
