@@ -25,11 +25,11 @@ public class EX4 {
 
         List<String> ar = new ArrayList<String>();
         ar.add("a");
-        ar.add("aa");
+        ar.add("bb");
         ar.add("aaaa");
         ar.add("aaa");
 
-       Collections.sort(ar);
+       Collections.sort(ar,Comparator.comparingInt(String::length));
        
        System.out.println(ar.toString());
     }
