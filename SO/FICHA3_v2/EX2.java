@@ -8,7 +8,7 @@ public class EX2 implements Runnable {
     public static void main(String[] args) {
 
         if (args.length > 1) {
-            System.err.println("Args > 1");
+            System.err.println("Args > ");
             System.exit(0);
         }
         int count = Integer.parseInt(args[0]);
