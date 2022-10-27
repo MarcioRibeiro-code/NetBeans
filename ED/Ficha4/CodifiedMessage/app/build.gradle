@@ -1,0 +1,37 @@
+plugins{
+    id 'java'
+    id 'application'
+}
+
+jar{
+    manifest{
+        attributes 'Specification-Title': 'LinkedQueue - Eng.Software'
+        attributes 'Specification-Version': '1.0'
+        attributes 'Specification-Vendor':'ESTG'
+        attributes 'Implementation-Title':'CodifiedMessage.main'
+        attributes 'Implementation-Version':'build01'
+        attributes 'Implementation-Vendor':'ESTG'
+        attributes 'Main-Class':'gradleExample.HelloWorld'
+    }
+}
+
+repositories{
+    mavenCentral()
+}
+
+dependencies {
+    // Use JUnit test framework.
+    testImplementation 'junit:junit:4.13.2'
+
+    // This dependency is used by the application.
+    implementation 'com.google.guava:guava:31.0.1-jre'
+}
+
+mainClassName = 'CodifiedMessage.Main'
+
+task zip(type:Zip,group:'Archive',description: "Archives sources in a zip file"){
+    destinationDirectory = file(".")
+    archiveFileName = "backup.zip"
+    from "src"
+}
+build.finalizedBy zip,javadoc
