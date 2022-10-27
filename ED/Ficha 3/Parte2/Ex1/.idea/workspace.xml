@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41473210-07e6-4720-8f6c-cc18a66e5015" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lib/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lib/Exception/EmptyCollectionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lib/Interfaces/StackADT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lib/postfix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte 1/EX1/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parte 1/EX1/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte 1/EX1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parte 1/EX1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte 1/EX1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parte 1/EX1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/.idea/Parte1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/app/bin/main/ex1/lib/ArrayStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/app/bin/main/ex1/lib/Exception/EmptyCollectionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/app/bin/main/ex1/lib/Interfaces/StackADT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/app/bin/main/ex1/lib/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/app/bin/test/ex1/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/app/src/main/java/ex1/lib/ArrayStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/app/src/main/java/ex1/lib/Exception/EmptyCollectionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/app/src/main/java/ex1/lib/Interfaces/StackADT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/app/src/main/java/ex1/lib/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/app/src/test/java/ex1/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex1/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parte1/Ex5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Parte 1/EX2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Parte 1/EX2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SO/FICHA3/EX4/BinarySemaphore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SO/FICHA3/EX4/Run.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SO/FICHA3/EX4/Run2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SO/FICHA3/EX4/SharedObj.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SO/FICHA3/EX4/doThreadSharing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SO/FICHA3/EX4_example/HelloRunnable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SO/FICHA3/EX4_example/HelloThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SO/FICHA3/EX4_example/Run.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SO/FICHA3/EX4_example/Run2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SO/FICHA3/EX4_example/SharedObj.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SO/FICHA3/EX4_example/doThreadSharing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SO/FICHA3/Ex2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SO/FICHA3/Ex2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SO/FICHA3/Ex2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SO/FICHA3/Ex2.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GOesKyzEndM4AxBIZcoVpqpACL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/PC/OneDrive - Instituto Politécnico do Porto/Documentos/GitHub/Repositorio/NetBeansProject/ED/Ficha 3/Parte2/Ex1/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\OneDrive - Instituto Politécnico do Porto\Documentos\GitHub\Repositorio\NetBeansProject\ED\Ficha 3\Parte2\Ex1\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\OneDrive - Instituto Politécnico do Porto\Documentos\GitHub\Repositorio\NetBeansProject\ED\Ficha 3\Parte2\Ex1\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="Ex1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="postfix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lib.postfix" />
+      <module name="Ex1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.postfix" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41473210-07e6-4720-8f6c-cc18a66e5015" name="Changes" comment="" />
+      <created>1666264265420</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666264265420</updated>
+      <workItem from="1666264271096" duration="77000" />
+      <workItem from="1666264510129" duration="243000" />
+      <workItem from="1666264757899" duration="6675000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
