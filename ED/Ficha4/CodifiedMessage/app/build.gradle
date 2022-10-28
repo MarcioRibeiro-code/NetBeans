@@ -3,17 +3,8 @@ plugins{
     id 'application'
 }
 
-jar{
-    manifest{
-        attributes 'Specification-Title': 'LinkedQueue - Eng.Software'
-        attributes 'Specification-Version': '1.0'
-        attributes 'Specification-Vendor':'ESTG'
-        attributes 'Implementation-Title':'CodifiedMessage.main'
-        attributes 'Implementation-Version':'build01'
-        attributes 'Implementation-Vendor':'ESTG'
-        attributes 'Main-Class':'gradleExample.HelloWorld'
-    }
-}
+mainClassName = 'codifiedmessage.lib.classes.Main'
+
 
 repositories{
     mavenCentral()
@@ -27,7 +18,19 @@ dependencies {
     implementation 'com.google.guava:guava:31.0.1-jre'
 }
 
-mainClassName = 'CodifiedMessage.Main'
+
+jar{
+    manifest{
+        attributes 'Specification-Title': 'LinkedQueue - Eng.Software'
+        attributes 'Specification-Version': '1.0'
+        attributes 'Specification-Vendor':'ESTG'
+        attributes 'Implementation-Title':'codifiedmessage.lib.classes.Main'
+        attributes 'Implementation-Version':'build01'
+        attributes 'Implementation-Vendor':'ESTG'
+        attributes 'Main-Class':'codifiedmessage.lib.classes.Main'
+    }
+}
+
 
 task zip(type:Zip,group:'Archive',description: "Archives sources in a zip file"){
     destinationDirectory = file(".")
