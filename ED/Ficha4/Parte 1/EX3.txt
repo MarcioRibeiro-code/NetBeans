@@ -1,0 +1,2 @@
+As alterações necessarias foram unicamente na parte de implementação, que uma vez que estas obedecem ao mesmo contrato (interface), na parte de "fora" da classe.
+Neste caso na classe cipher não sofreu nenhuma alteraçao.

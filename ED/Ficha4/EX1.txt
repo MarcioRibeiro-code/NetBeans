@@ -1,0 +1,8 @@
+EXERCICIO 1
+Porquê que usamos uma implementação em array circular? Porque não um array normal como numa stack?
+
+Devido ao ln(O(n)) ao retirar um elemento no array normal, uma vez que é preciso mover os elementos de posicao.
+
+Já na stack utiliza-se um array normal, que uma vez que se elimina e adiciona no fim. Nunca há o problema de espaços vazio, ao contrario nas Queues
+que se nao se usar array circulares ou mover os elementos. Conforme que se vai eliminando elementos a posição onde estava o elemento esta vazia, que outrora
+significa espaço a nao ser utilizado.

@@ -1,0 +1,6 @@
+EXERCICIO 2
+Qual o Big O para a operação dequeue nas diferentes implementações de uma Queue Array, arrayCircular e lista ligada?
+
+ArrayQueue -> O(N)
+CircularArrayQueue -> O(1)
+ListaLigada -> O(1)
