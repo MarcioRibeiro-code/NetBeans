@@ -3,7 +3,7 @@ package lib.classes;
 
 import lib.interfaces.QueueADT;
 
-public class ArrayQueue<T extends Comparable<T>> implements QueueADT<T> {
+public class ArrayQueue<T> implements QueueADT<T> {
   private final Object[] elements = new Object[3];
   private int size = 0;
   private int front = 0;

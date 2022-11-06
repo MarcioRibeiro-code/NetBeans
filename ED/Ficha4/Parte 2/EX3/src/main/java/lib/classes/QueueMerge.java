@@ -41,24 +41,33 @@ public class QueueMerge {
     return merged;
   }
 
+
+  public static <T extends Comparable<T>> QueueADT N_StringQueue(String[] args0) {
+
+
+    QueueADT<QueueADT> all_queue = new linkedQueue();
+    for (int i = 0; i < args0.length; i++) {
+      QueueADT temp_queue = new linkedQueue();
+      temp_queue.enqueue(args0[i]);
+      System.out.println("I " + i + ". " + args0[i]);
+      all_queue.enqueue(temp_queue);
+    }
+
+    while (all_queue.size() != 1) {
+      QueueADT first = all_queue.dequeue();
+      QueueADT second = all_queue.dequeue();
+      System.out.println(first);
+      System.out.println(second);
+      all_queue.enqueue(merge(first, second));
+    }
+    return all_queue;
+  }
+
   public static void main(String[] args) {
 
-    String[] a = {"Marcio", "Ribeiro", "Santos", "Samuel"};
-    linkedQueue[] lq = new linkedQueue[a.length];
+    String[] a = {"Samuel", "Santos", "Marcio", "Ribeiro"};
+    System.out.println(N_StringQueue(a));
 
-    for (int i = 0; i < lq.length; i++) {
-      lq[i] = new linkedQueue<String>();
-      lq[i].enqueue(a[i]);
-    }
-    int count = 1;
-    while (count != a.length ) {
-      lq[0] = (linkedQueue) merge(lq[0], lq[count]);
-      count++;
-    }
-
-
-    System.out.println(mergeSort(lq[0]));
-  }
 /* lq[0] = (linkedQueue) merge(lq[0], lq[1]);
     lq[2] = (linkedQueue) merge(lq[2], lq[3]);
     System.out.println(lq[0]);
@@ -99,5 +108,5 @@ public class QueueMerge {
     System.out.println(mergeSort(c));
     * */
 
+  }
 }
-

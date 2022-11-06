@@ -3,7 +3,7 @@ package lib.classes;
 
 import lib.interfaces.QueueADT;
 
-public class linkedQueue<T extends Comparable<T>> implements QueueADT<T> {
+public class linkedQueue<T> implements QueueADT<T> {
   private int size = 0;
   private LinearNode<T> front = null;
   private LinearNode<T> rear = null;
@@ -56,7 +56,7 @@ public class linkedQueue<T extends Comparable<T>> implements QueueADT<T> {
     String returno = "";
 
     for (LinearNode<T> current = this.front; current != null; current = current.getNext()) {
-      returno = returno + (current.getElement() != null ? current.getElement() + "<-" : "");
+      returno = returno + (current.getElement() != null ? (current.getElement() + " ") : "");
     }
 
     return returno.length() != 0 ? returno : "Empty Queue";
