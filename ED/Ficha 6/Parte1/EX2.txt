@@ -1,0 +1,32 @@
+Uma Queue pode ser armazenada em array usando 2 indices inteiros para guardar a proxima posição livre
+na cauda e a posição do proximo elemento a ser removido da cabeça. Explique o funcionamento das operações
+de enqueue,dequeue,empty,first de modo que não exista nenhum processo de shift dos elementos.
+
+Para que não haja um Shift nos elementos é necessario recorrer a uma CircularQueue, desta forma podemos utilizar
+todas as posiçoes podem ser povoadas mesmo apos a remoção de algum elemento e se chegue ao " limit capacity" do
+array.
+Quando isso é verificado o inteiro que possui a proxima posição livre deve tomar o valor 0, desta forma dando a volta ao array (circular).
+
+ENQUEUE
+
+check if the queue is full
+for the first element, set value of FRONT to 0
+circularly increase the REAR index by 1 (i.e. if the rear reaches the end, next it would be at the start of the queue)
+add the new element in the position pointed to by REAR
+
+DEQUEUE
+check if the queue is empty
+return the value pointed by FRONT
+circularly increase the FRONT index by 1
+for the last element, reset the values of FRONT and REAR to -1
+
+EMPTY
+check if front==-1
+return true
+else
+return false
+
+FIRST
+Check if Empty
+	throw Exception
+return ArrayQueue[front].element
