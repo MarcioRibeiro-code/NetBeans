@@ -1,17 +1,11 @@
 package lib.classes.Array;
 
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-
 import lib.exception.EmptyCollectionException;
 import lib.interfaces.ListADT;
 
-/**
- * .
- *
- * @param <T>
- */
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
 public class ArrayList<T> implements ListADT<T> {
   protected final int DEFAULT_CAPACITY = 100;
   private final int NOT_FOUND = -1;
