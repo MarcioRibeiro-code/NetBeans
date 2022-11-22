@@ -3,87 +3,78 @@ package lib.classes.Linked;
 import lib.exception.EmptyCollectionException;
 import lib.interfaces.UnorderedListADT;
 
-public class UnorderedSingleLinkedList<T> extends SingleLinkedList<T> implements UnorderedListADT<T> {
+import java.util.NoSuchElementException;
 
-  SingleNode addToEmpty(SingleNode last, T data) {
-    // This function is only for empty list
-    if (last != null)
-      return last;
-
-    // Creating a node dynamically.
-    SingleNode temp = new SingleNode(data);
-
-    // Assigning the data.
-    last = temp;
-    // Note : list was empty. We link single node
-    // to itself.
-    temp.setNext(last);
-
-    return last;
-  }
+public class UnorderedSingleLinkedList<T extends Comparable<T>> extends SingleLinkedList<T> implements UnorderedListADT<T> {
 
 
   @Override
   public void addToFront(Object obj) {
-    if (post == null) {
-      addToEmpty(post, (T) obj);
+    SingleNode<T> toAdd = new SingleNode<T>((T) obj);
+    if (pre == null) {
+      pre = toAdd;
+      post = toAdd;
+      toAdd.setNext(pre);
+    } else {
+      toAdd.setNext(pre);
+      pre = toAdd;
+      post.setNext(pre);
     }
-    SingleNode temp = new SingleNode(obj);
-    temp.setNext(post.getNext());
-    post.setNext(temp);
+    size++;
   }
 
   @Override
   public void addToRear(Object obj) {
-    if (post == null)
-      addToEmpty(post, (T) obj);
+    SingleNode<T> toAdd = new SingleNode<>((T) obj);
 
-    // Creating a node dynamically.
-    SingleNode temp = new SingleNode(obj);
-
-
-    // Adjusting the links.
-    temp.setNext(post.getNext());
-    post.setNext(temp);
-    post = temp;
-
+    if (pre == null) {
+      pre = toAdd;
+      post = toAdd;
+      toAdd.setNext(pre);
+    } else {
+      post.setNext(toAdd);
+      post = toAdd;
+      post.setNext(pre);
+    }
+    size++;
   }
 
   @Override
   public void addAfter(Object element, Object target) {
 
-    if (post == null)
-      return;
-
-    SingleNode temp, p;
-    p = post.getNext();
-    do {
-      if (p.getElement().equals(target)) {
-        temp = new SingleNode(element);
-        temp.setNext(p.getNext());
-        p.setNext(temp);
-
-        if (p == post)
-          post = temp;
-        return;
+    if (pre == null) {
+      throw new NoSuchElementException();
+    } else {
+      SingleNode toAdd = new SingleNode((Comparable) element);
+      SingleNodeIterator iterator = (SingleNodeIterator) iterator();
+      while (iterator.hasNext() && iterator.current.compareTo((T) target) > 0) {
+        iterator.next();
       }
-      p = p.getNext();
-    } while (p != post.getNext());
+      toAdd.setNext(iterator.current.getNext());
+      iterator.current.setNext(toAdd);
+    }
+    size++;
+
   }
 
   public static void main(String[] args) {
     UnorderedSingleLinkedList<String> udll = new UnorderedSingleLinkedList<>();
     udll.addToFront(1);
     udll.addToFront(2);
-    udll.addToFront(3);
-    System.out.println(udll.toString());
-    try {
+    //udll.addToFront(3);
 
-      udll.removeLast();
-    } catch (EmptyCollectionException e) {
+
+
+   udll.addAfter(4, 2);
+    udll.addToRear(4);
+
+   /* try {
+      System.out.println(String.valueOf(udll.removeLast()));
+    } catch (EmptyCollectionException | NoSuchElementException e) {
       throw new RuntimeException(e);
-    }
+    }*/
     System.out.println(udll.toString());
+
   }
 
 }

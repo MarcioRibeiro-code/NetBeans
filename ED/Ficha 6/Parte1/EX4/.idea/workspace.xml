@@ -5,47 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c7ab30c-1264-4c64-8ee8-2862e4784009" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/OrderedSingleLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/SingleLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/SingleNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/UnorderedSingleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyleidea-libs/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Ex4.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Ex5.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lib/classes/Array/ArrayList$ArrayIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/lib/classes/Array/ArrayList$ArrayIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lib/classes/Array/ArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/lib/classes/Array/ArrayList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lib/classes/Linked/DoubleLinkedList$DoublelinkListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lib/classes/Linked/DoubleLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lib/classes/Linked/DoubleNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lib/classes/Linked/OrderedDoubleLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lib/classes/Linked/UnorderedDoubleLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/classes/Array/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/classes/Array/ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/classes/Array/ArrayOrderedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/classes/Array/ArrayOrderedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/classes/Array/ArrayUnorderedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/classes/Array/ArrayUnorderedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/DoubleLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/DoubleNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/OrderedDoubleLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/UnorderedDoubleLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/exception/EmptyCollectionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/exception/EmptyCollectionException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/interfaces/ListADT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/interfaces/ListADT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/interfaces/OrderedListADT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/interfaces/OrderedListADT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/OrderedSingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/OrderedSingleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/SingleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/SingleNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/SingleNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/UnorderedSingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/classes/Linked/UnorderedSingleLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +28,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="EX4" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -105,6 +94,7 @@
       <updated>1668503787903</updated>
       <workItem from="1668503791598" duration="472000" />
       <workItem from="1668504278097" duration="19513000" />
+      <workItem from="1669024818389" duration="9308000" />
     </task>
     <servers />
   </component>
@@ -126,19 +116,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lib/classes/Linked/UnorderedSingleLinkedList.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lib/classes/Linked/OrderedSingleLinkedList.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/lib/classes/Linked/OrderedSingleLinkedList.java</url>
           <line>41</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lib/classes/Linked/OrderedSingleLinkedList.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lib/classes/Linked/UnorderedSingleLinkedList.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

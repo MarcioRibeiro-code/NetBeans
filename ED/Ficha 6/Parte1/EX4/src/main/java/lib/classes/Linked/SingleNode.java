@@ -1,6 +1,6 @@
 package lib.classes.Linked;
 
-public class SingleNode<T> {
+public class SingleNode<T extends Comparable<T>> implements Comparable<T> {
   private SingleNode<T> next;
   private final T value;
 
@@ -26,5 +26,8 @@ public class SingleNode<T> {
     return value;
   }
 
-
+  @Override
+  public int compareTo(T o) {
+    return this.getElement().compareTo(o);
+  }
 }

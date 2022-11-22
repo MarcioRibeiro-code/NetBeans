@@ -6,7 +6,7 @@ import lib.interfaces.ListADT;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class SingleLinkedList<T> implements ListADT<T> {
+public class SingleLinkedList<T extends Comparable<T>> implements ListADT<T> {
   protected SingleNode<T> pre;
   protected SingleNode<T> post;
   int size;
@@ -14,20 +14,23 @@ public class SingleLinkedList<T> implements ListADT<T> {
   public SingleLinkedList() {
     this.size = 0;
     pre = null;
+    post = null;
   }
 
 
   @Override
   public T removeFirst() throws EmptyCollectionException {
-    final T value = pre.getElement();
-
-
     if (isEmpty()) {
-      throw new EmptyCollectionException("list");
+      throw new EmptyCollectionException("List is Empty");
     }
+    final T value = post.getNext().getElement();
 
-    pre = pre.getNext();
-    post.setNext(pre);
+    if (size() > 1) {
+      pre = pre.getNext();
+      post.setNext(pre);
+    } else {
+      pre = post = null;
+    }
     size--;
     return value;
   }
@@ -35,17 +38,16 @@ public class SingleLinkedList<T> implements ListADT<T> {
   @Override
   public T removeLast() throws EmptyCollectionException {
     if (isEmpty()) {
-      throw new EmptyCollectionException("list");
+      throw new EmptyCollectionException("List is Empty");
     }
 
     SingleNodeIterator iterator = new SingleNodeIterator();
-    while (iterator.current.getNext() != post) {
+    while (iterator.hasNext() && !iterator.current.getNext().equals(post)) {
       iterator.next();
     }
-    iterator.current.setNext(post.getNext());
-    T value = this.post.getElement();
-    this.post = iterator.current;
-
+    final T value = iterator.current.getNext().getElement();
+    post = iterator.current;
+    post.setNext(pre);
     size--;
     return value;
   }
@@ -53,11 +55,55 @@ public class SingleLinkedList<T> implements ListADT<T> {
   @Override
   public T remove(Object element) throws EmptyCollectionException {
     if (isEmpty()) {
-      throw new EmptyCollectionException("list");
+      throw new EmptyCollectionException("List is Empty");
     }
 
+    SingleNode<T> current = pre;
+    SingleNode<T> previous = null;
 
-    return null;
+    SingleNodeIterator iterator = (SingleNodeIterator) iterator();
+
+    while (iterator.hasNext() && !iterator.current.getElement().equals(element)) {
+
+      if (current.getNext() == pre) {
+        throw new NoSuchElementException("Given Node is not found in the list");
+      }
+
+      previous = iterator.current;
+      iterator.next();
+      current = iterator.current;
+    }
+
+    if (current == pre && current.getNext() == pre) {
+      final T value = pre.getElement();
+      pre = null;
+      size--;
+      return value;
+    }
+
+    if (current == pre) {
+      final T value = current.getElement();
+      previous = pre;
+      while (previous.getNext() != pre) {
+        previous = previous.getNext();
+      }
+      pre = current.getNext();
+      previous.setNext(pre);
+      size--;
+      return value;
+    } else if (current.getNext() == pre) {
+      final T value = current.getElement();
+
+      previous.setNext(pre);
+      size--;
+      return value;
+    } else {
+      final T value = current.getElement();
+      previous.setNext(current.getNext());
+      size--;
+      return value;
+    }
+
   }
 
   @Override
@@ -129,7 +175,7 @@ public class SingleLinkedList<T> implements ListADT<T> {
       returno += singleNodeIterator.current.getElement();
       singleNodeIterator.next();
     }
-    return returno;
+    return returno + "post";
   }
 
 }
