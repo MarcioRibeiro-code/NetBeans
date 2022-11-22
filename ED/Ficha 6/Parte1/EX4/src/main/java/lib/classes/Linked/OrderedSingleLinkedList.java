@@ -16,7 +16,7 @@ public class OrderedSingleLinkedList<T extends Comparable<T>> extends SingleLink
 
       if (element.compareTo(pre.getElement()) <= 0) {
         toAdd.setNext(pre);
-        pre=toAdd;
+        pre = toAdd;
         size++;
         return;
       }
@@ -35,7 +35,8 @@ public class OrderedSingleLinkedList<T extends Comparable<T>> extends SingleLink
 
   public static void main(String[] args) {
 
-    OrderedSingleLinkedList<Integer> orderedSingleLinkedList = new OrderedSingleLinkedList<Integer>();
+    OrderedSingleLinkedList<Integer> orderedSingleLinkedList
+        = new OrderedSingleLinkedList<Integer>();
 
     orderedSingleLinkedList.add(4);
     orderedSingleLinkedList.add(40);
