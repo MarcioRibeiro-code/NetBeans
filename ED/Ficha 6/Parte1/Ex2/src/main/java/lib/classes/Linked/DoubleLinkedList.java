@@ -9,27 +9,34 @@ import java.util.NoSuchElementException;
 public class DoubleLinkedList<T> implements ListADT<T> {
   protected DoubleNode<T> pre;
   protected DoubleNode<T> post;
-  protected int size = 0;
+  protected int size;
 
   DoubleLinkedList() {
-    pre = new DoubleNode<>();
-    post = new DoubleNode<>();
-    pre.setNext(post);
-    post.setPrevious(pre);
+    pre = post = null;
+    size = 0;
   }
 
 
   @Override
   public T removeFirst() throws EmptyCollectionException {
-    final T value = pre.getNext().getElement();
-
 
     if (isEmpty()) {
-      throw new EmptyCollectionException("list");
+      throw new EmptyCollectionException("Empty List");
     }
+    final T value = pre.getElement();
 
-    pre.setNext(pre.getNext().getNext());
-    pre.getNext().setPrevious(pre);
+    if (pre.getNext() == pre) {
+      pre = null;
+    } else {
+      post = pre;
+
+      DoublelinkListIterator iterator = (DoublelinkListIterator) iterator();
+      while (iterator.hasNext()) {
+        iterator.next();
+      }
+      pre = pre.getNext();
+      iterator.current.setNext(pre);
+    }
     size--;
     return value;
   }
@@ -38,12 +45,22 @@ public class DoubleLinkedList<T> implements ListADT<T> {
   public T removeLast() throws EmptyCollectionException {
 
     if (isEmpty()) {
-      throw new EmptyCollectionException("list");
+      throw new EmptyCollectionException("Empty List");
     }
+    final T value = post.getElement();
 
-    final T value = post.getPrevious().getElement();
-    post.getPrevious().getPrevious().setNext(post);
-    post.setPrevious(post.getPrevious().getPrevious());
+    if (pre.getNext() == pre) {
+      pre = null;
+    } else {
+      DoubleNode<T> tempNode = pre;
+      DoublelinkListIterator iterator = (DoublelinkListIterator) iterator();
+      while (iterator.current.getNext().getNext() != pre) {
+        iterator.next();
+        tempNode = iterator.current;
+      }
+      tempNode.setNext(pre);
+
+    }
     size--;
     return value;
   }
@@ -55,32 +72,54 @@ public class DoubleLinkedList<T> implements ListADT<T> {
       throw new EmptyCollectionException("list");
     }
 
+    DoubleNode current = pre, prev = null;
 
-    Object value = null;
-    DoublelinkListIterator it = (DoublelinkListIterator) iterator();
-
-    while (it.hasNext()) {
-      if (it.current.getElement().equals(element)) {
-        it.remove();
-        break;
+    DoublelinkListIterator iterator = (DoublelinkListIterator) iterator();
+    while (iterator.hasNext() && !iterator.current.getElement().equals(element)) {
+      if (iterator.current.getNext() == pre) {
+        throw new NoSuchElementException("List doesnt have node with value: " + element);
       }
-      it.next();
+      prev = iterator.current;
+      iterator.next();
+      current = iterator.current;
     }
 
+    if (iterator.current.getNext() == pre && prev == null) {
+      final T value = pre.getElement();
+      pre = null;
+      return value;
+    }
+    final T value = iterator.current.getElement();
+    if (iterator.current == pre) {
 
-    return (T) value;
+      prev = pre.getPrevious();
+      pre = pre.getNext();
+
+      prev.setNext(pre);
+      pre.setPrevious(prev);
+    } else if (iterator.current.getNext() == pre) {
+      prev.setNext(pre);
+      pre.setPrevious(prev);
+    } else {
+      DoubleNode temp = iterator.current.getNext();
+      prev.setNext(temp);
+      temp.setPrevious(prev);
+    }
+
+    size--;
+    return value;
   }
 
 
   @Override
   public T first() {
-    return pre.getNext().getElement();
+    return pre.getElement();
   }
 
   @Override
   public T last() {
 
-    return post.getPrevious().getElement();
+    return post.getElement();
   }
 
   @Override
@@ -99,7 +138,7 @@ public class DoubleLinkedList<T> implements ListADT<T> {
     int count = 0;
 
     DoublelinkListIterator() {
-      current = pre.getNext();
+      current = pre;
     }
 
 
@@ -113,15 +152,10 @@ public class DoubleLinkedList<T> implements ListADT<T> {
       if (!hasNext()) {
         throw new NoSuchElementException();
       }
+      final T value = current.getElement();
       current = current.getNext();
       count++;
-      return current.getElement();
-    }
-
-    @Override
-    public void remove() {
-      current.getPrevious().setNext(current.getNext());
-      current.getNext().setPrevious(current.getPrevious());
+      return value;
     }
 
   }
@@ -135,13 +169,13 @@ public class DoubleLinkedList<T> implements ListADT<T> {
 
   @Override
   public String toString() {
-    DoubleNode<T> current = post;
-    String returno = "";
-    while (current != null) {
-      returno += (current.getElement() != null) ? current.getElement() : "";
-      current = current.getPrevious();
+    DoublelinkListIterator iterator = (DoublelinkListIterator) iterator();
+    String returno = "pre";
+    while (iterator.hasNext()) {
+      returno += iterator.next();
     }
-    return returno;
+
+    return returno + "post";
   }
 
 
